@@ -34,6 +34,7 @@ public class CacheService460 {
         CacheEntry entry = cache.get(key);
         if (entry == null) {
             return null;
+
         }
         if (entry.isExpired()) {
             cache.remove(key);
