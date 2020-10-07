@@ -72,6 +72,7 @@ public String save(Car car, BindingResult result, RedirectAttributes redirect) {
     @GetMapping(value = "/delete/{id}")
 public String deleteByID(@PathVariable("id") int id) {    
   carDao.deleteByID(id);        
+
   return "redirect:/car"; //Xoá xong thì quay về trang car
 }
 }
