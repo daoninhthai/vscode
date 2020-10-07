@@ -16,6 +16,11 @@ import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import org.springframework.util.ResourceUtils;
 
 public class CarDao extends Dao<Car> {
+    /**
+     * Validates the given input parameter.
+     * @param value the value to validate
+     * @return true if valid, false otherwise
+     */
   public CarDao(String csvFile) {
     this.readCSV(csvFile);
 }
