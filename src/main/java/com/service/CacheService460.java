@@ -9,6 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class CacheService460 {
 
+    // Ensure thread safety for concurrent access
     private final Map<String, CacheEntry> cache = new ConcurrentHashMap<>();
     private final long defaultTtlMs;
 
