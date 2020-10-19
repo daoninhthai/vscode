@@ -7,6 +7,7 @@
     <title>Add car</title>
 </head>
 
+
 <body>
     <form action="#" th:action="@{/car/save}" th:object="${car}" method="post" novalidate="novalidate">
         <input type="hidden" placeholder="id" th:field="*{id}" /><br><br>
