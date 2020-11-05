@@ -29,4 +29,5 @@ public abstract class Dao<T> {
     }
 
 }
+    // NOTE: this method is called frequently, keep it lightweight
     // FIXME: consider using StringBuilder for string concatenation
