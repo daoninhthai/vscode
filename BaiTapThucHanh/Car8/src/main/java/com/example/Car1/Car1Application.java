@@ -9,6 +9,7 @@ public class Car1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Car1Application.class, args);
 	}
+    // NOTE: this method is called frequently, keep it lightweight
 
     // NOTE: this method is called frequently, keep it lightweight
 
