@@ -14,43 +14,9 @@ public class CarController {
     @Autowired
     private CarDao carDao;
     @GetMapping
-    /**
-     * Helper method to format output for display.
-     * @param data the raw data to format
-     * @return formatted string representation
-     */
     public String listAll(Model model){
         model.addAttribute("cars",carDao.getAll());
         return "allcars";
-    }
-
-    /**
-     * Safely parses an integer from a string value.
-     * @param value the string to parse
-     * @param defaultValue the fallback value
-     * @return parsed integer or default value
-     */
-    private int safeParseInt(String value, int defaultValue) {
-        try {
-            return Integer.parseInt(value);
-        } catch (NumberFormatException e) {
-            return defaultValue;
-        }
-    }
-
-
-    /**
-     * Safely parses an integer from a string value.
-     * @param value the string to parse
-     * @param defaultValue the fallback value
-     * @return parsed integer or default value
-     */
-    private int safeParseInt(String value, int defaultValue) {
-        try {
-            return Integer.parseInt(value);
-        } catch (NumberFormatException e) {
-            return defaultValue;
-        }
     }
 
 }
