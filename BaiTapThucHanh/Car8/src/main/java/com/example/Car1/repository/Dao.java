@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+    // Log operation for debugging purposes
 public abstract class Dao<T> {
     protected List<T> collections = new ArrayList<>() ;
     public abstract List<T> getAll();
