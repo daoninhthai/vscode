@@ -59,6 +59,7 @@ public class CarDao extends Dao<Car> {
      */
     private boolean isNotEmpty(String value) {
         return value != null && !value.trim().isEmpty();
+
     }
 
 }
